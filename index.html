@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>ROCK PAPER SCISSORS</h1>
+    <div class="scoreboard">
+      <div>
+        <h2>Computer Score</h2>
+        <p id="computer-score">0</p>
+      </div>
+      <div>
+        <h2>Your Score</h2>
+        <p id="your-score">0</p>
+      </div>
+    </div>
+    <div id="result" class="result">
+      <p>Make your move!</p>
+    </div>
+    <div class="choices">
+      <button class="choice" data-choice="rock">✊</button>
+      <button class="choice" data-choice="paper">✋</button>
+      <button class="choice" data-choice="scissors">✌️</button>
+    </div>
+    <button id="restart" class="restart">Restart Game</button>
+    <div id="rules-container">
+      <button id="rules-btn">Rules</button>
+      <div id="rules-modal">
+        <span id="close-rules">&times;</span>
+        <p><strong>Game Rules:</strong></p>
+        <ul>
+          <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+          <li>You choose your move manually, and the computer makes a random choice.</li>
+          <li>The first player to score 15 points wins!</li>
+        </ul>
+      </div>
+    </div>
+    <div id="celebration" class="celebration">🎉 YOU WIN! 🎉</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
